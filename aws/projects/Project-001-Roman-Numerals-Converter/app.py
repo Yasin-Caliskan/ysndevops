@@ -16,8 +16,8 @@ def main_post():
         number = int(alpha)
         if not 0 < number < 4000:
             return render_template('index.html', not_valid = True, developer_name='Yasin')
-        return render_template('result.html', developer_name = 'Yasin', number_decimal = number, number_roman = convert(number))
+        return render_template('result.html', developer_name ='Yasin', number_decimal = number, number_roman = convert(number))
     else:
-        return render_template('index.html', not_valid = False, developer_name = 'Yasin')
+        return render_template('index.html', not_valid = False, developer_name ='Yasin')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
